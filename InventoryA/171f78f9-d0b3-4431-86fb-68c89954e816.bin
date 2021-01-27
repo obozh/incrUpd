@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>topo_root_changed_content</name>
+<description>descr</description>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="2917ac69-9117-4db2-8ff1-c5e169acd996" id="if5083443-eb7a-47e9-8319-b4d374764551" shared="true" type="device">
+<property isimportant="false" name="name">ar_immutable (2)</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=2917ac69-9117-4db2-8ff1-c5e169acd996</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[ar]</extensions>
+<boundary height="100" width="100" x="1127.3333333333335" y="296"/>
+<resource guid="ie82b6e9d-3509-49d6-ad90-d906f4ad24fc" id="ie82b6e9d-3509-49d6-ad90-d906f4ad24fc" type="port">
+<property isimportant="false" name="name">Port 1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">connected</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">any</extensions>
+<property name="inventoryName"/>
+</resource>
+<property name="inventoryName"/>
+</resource>
+<resource guid="1b2137ba-1776-4f9b-a3d5-29a007542b0d" id="icc65b1da-1860-4a46-a6d9-9fcc2fc807c0" shared="true" type="device">
+<property isimportant="false" name="name">ar_immutable</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=1b2137ba-1776-4f9b-a3d5-29a007542b0d</property>
+<property isimportant="false" name="reservationTime">DEFERRED</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="hostResource_topologyResourceId">if5083443-eb7a-47e9-8319-b4d374764551</property>
+<property isimportant="false" name="hostResource_parentType">ANCESTOR</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[ar]</extensions>
+<boundary height="100" width="100" x="862" y="296"/>
+<resource guid="if12ae667-15c2-434b-9e3e-4262fcfb615f" id="if12ae667-15c2-434b-9e3e-4262fcfb615f" type="port">
+<property isimportant="false" name="name">Port 1 new name</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">connected</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">any</extensions>
+<property name="inventoryName"/>
+</resource>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity>
+<link id="ib86634a8-d92c-41b5-877c-e3c1ff3963fd">
+<property isimportant="false" name="name">Link</property>
+<property isimportant="false" name="type">Ethernet</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="ie82b6e9d-3509-49d6-ad90-d906f4ad24fc"/>
+<endpoint direction="bidirectional" id="if12ae667-15c2-434b-9e3e-4262fcfb615f"/>
+<extensions type="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">8496da5d-61c6-5d77-e4c0-e17fc64a80ee</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">L1</property>
+<property isimportant="false" name="shortcut">Eth</property>
+</propertyCollection>
+</link>
+</connectivity>
+</body>
+</tbml>
