@@ -1,1 +1,53 @@
-<?xml version='1.0' encoding='UTF-8'?><inventory format-version="1.0"><drivers/><templates><template><id>dd7a609d-91cd-4415-a403-79c8bdf6598e</id><revisionId>dd7a609d-91cd-4415-a403-79c8bdf6598e</revisionId><name>Template_change</name><description></description><isTemplate>true</isTemplate><type>DEVICE</type><interfaceType>NONE</interfaceType><utilizationType>SHARED</utilizationType><reservationTime>IMMEDIATE</reservationTime><isCustomReservationTime>false</isCustomReservationTime><icon/><defaultImageAttach/><defaultConfigAttach/></template><template><id>e4b7d10c-d738-4820-ac70-7297bba31ad0</id><revisionId>e4b7d10c-d738-4820-ac70-7297bba31ad0</revisionId><name>Template_delete</name><description></description><isTemplate>true</isTemplate><type>DEVICE</type><interfaceType>NONE</interfaceType><utilizationType>SHARED</utilizationType><reservationTime>IMMEDIATE</reservationTime><isCustomReservationTime>false</isCustomReservationTime><icon/><defaultImageAttach/><defaultConfigAttach/></template><template><id>00930eba-7f76-46dd-a34d-e7a4533e4dfb</id><revisionId>00930eba-7f76-46dd-a34d-e7a4533e4dfb</revisionId><name>Template_immutable</name><description></description><isTemplate>true</isTemplate><type>DEVICE</type><interfaceType>NONE</interfaceType><utilizationType>SHARED</utilizationType><reservationTime>IMMEDIATE</reservationTime><isCustomReservationTime>false</isCustomReservationTime><icon/><defaultImageAttach/><defaultConfigAttach/></template></templates><cableTypes/><resources/><cables/><orchestratedResources/><abstractResources/><links/><associations/></inventory>
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory format-version="1.0">
+   <drivers />
+   <templates>
+      <template>
+         <id>dd7a609d-91cd-4415-a403-79c8bdf6598e</id>
+         <revisionId>dd7a609d-91cd-4415-a403-79c8bdf6598e</revisionId>
+         <name>Template_change</name>
+         <description />
+         <isTemplate>true</isTemplate>
+         <type>DEVICE</type>
+         <interfaceType>NONE</interfaceType>
+         <utilizationType>SHARED</utilizationType>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isCustomReservationTime>false</isCustomReservationTime>
+         <icon />
+         <defaultImageAttach />
+         <defaultConfigAttach />
+      </template>
+      <template>
+         <id>e4b7d10c-d738-4820-ac70-7297bba31ad0</id>
+         <revisionId>e4b7d10c-d738-4820-ac70-7297bba31ad0</revisionId>
+         <name>Template_delete</name>
+         <description />
+         <isTemplate>true</isTemplate>
+         <type>DEVICE</type>
+         <interfaceType>NONE</interfaceType>
+         <utilizationType>SHARED</utilizationType>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isCustomReservationTime>false</isCustomReservationTime>
+         <icon />
+         <defaultImageAttach />
+         <defaultConfigAttach />
+      </template>
+      <template>
+         <id>00930eba-7f76-46dd-a34d-e7a4533e4dfb</id>
+         <revisionId>00930eba-7f76-46dd-a34d-e7a4533e4dfb</revisionId>
+         <name>Template_immutable</name>
+         <description />
+         <isTemplate>true</isTemplate>
+         <type>DEVICE</type>
+         <interfaceType>NONE</interfaceType>
+         <utilizationType>SHARED</utilizationType>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isCustomReservationTime>false</isCustomReservationTime>
+         <icon />
+         <defaultImageAttach />
+         <defaultConfigAttach />
+      </template>
+   </templates>
+   <orchestratedResources />
+   <abstractResources />
+</inventory>
