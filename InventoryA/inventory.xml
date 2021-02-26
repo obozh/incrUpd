@@ -1,1 +1,171 @@
-<?xml version='1.0' encoding='UTF-8'?><inventory format-version="1.0"><templates><template><id>75d60876-18fc-4f74-b43c-420dacb9cc89</id><revisionId>75d60876-18fc-4f74-b43c-420dacb9cc89</revisionId><name>Pord</name><description></description><isTemplate>true</isTemplate><type>PORT</type><interfaceType>NONE</interfaceType><utilizationType>SHARED</utilizationType><reservationTime>IMMEDIATE</reservationTime><isCustomReservationTime>false</isCustomReservationTime><icon/><defaultImageAttach/><defaultConfigAttach/></template><template><id>315ce9a8-6c39-4cf9-b969-b3284eabf991</id><revisionId>315ce9a8-6c39-4cf9-b969-b3284eabf991</revisionId><name>T1</name><description></description><isTemplate>true</isTemplate><type>DEVICE</type><interfaceType>NONE</interfaceType><utilizationType>SHARED</utilizationType><reservationTime>IMMEDIATE</reservationTime><isCustomReservationTime>false</isCustomReservationTime><icon/><defaultImageAttach/><defaultConfigAttach/><sessions><session><id>7eef721c-0850-4585-81bd-1d15853e0910</id><sessionId>93440541-93d1-4154-ac07-a139b6fbba85</sessionId><name>new_session</name><language>Python</language><baseProfile>application://com.fnfr.svt.applications.telnet</baseProfile><baseApplication>com.fnfr.svt.applications.telnet</baseApplication><isDisabled>false</isDisabled><resourceId>315ce9a8-6c39-4cf9-b969-b3284eabf991</resourceId><properties><property><id>5fd60360-9633-40c7-99de-80cc3f3a736b</id><name>ipAddress</name><value>10.1.2.1</value></property><property><id>00d63bce-ae68-4fbb-8947-3536b4f71ad4</id><name>type</name><value>com.fnfr.svt.applications.telnet.documents.TelnetSessionProperties</value></property></properties></session></sessions><nestedTemplates><nestedTemplate><id>af47e8c9-47e9-4eab-a249-edad078e56e7</id></nestedTemplate></nestedTemplates></template><template><id>af47e8c9-47e9-4eab-a249-edad078e56e7</id><revisionId>af47e8c9-47e9-4eab-a249-edad078e56e7</revisionId><name>T2</name><description></description><isTemplate>true</isTemplate><type>DEVICE</type><interfaceType>ORCHESTRATION</interfaceType><utilizationType>SHARED</utilizationType><reservationTime>IMMEDIATE</reservationTime><isCustomReservationTime>false</isCustomReservationTime><icon/><defaultImageAttach/><defaultConfigAttach/></template></templates><orchestratedResources><orchestratedResource><id>1a1a6b99-97e6-4ae6-8e88-8dfb85fe91e9</id><type>DEVICE</type><name>S1</name><description></description><condition>template[T1]</condition><role>S1_VELOCITY_SELECTED</role><referencedTemplateId>315ce9a8-6c39-4cf9-b969-b3284eabf991</referencedTemplateId><visibility>PUBLIC</visibility><resourceGroup><name></name></resourceGroup><icon/><nestedResources><orchestratedResource><id>3037aac3-d928-4ecb-9d55-fb54b105ff3b</id><type>DEVICE</type><name>NestS1</name><description></description><condition>template[T2]</condition><role>S1_VELOCITY_SELECTED</role><referencedTemplateId>af47e8c9-47e9-4eab-a249-edad078e56e7</referencedTemplateId><visibility>PUBLIC</visibility><resourceGroup><name></name></resourceGroup><icon/></orchestratedResource><orchestratedResource><id>c3ef85bb-1f7e-44fa-b508-6365c10f1ac9</id><type>PORT</type><name>OrchPort</name><description></description><condition>template[Pord]</condition><role>S1_VELOCITY_SELECTED</role><referencedTemplateId>75d60876-18fc-4f74-b43c-420dacb9cc89</referencedTemplateId><visibility>PUBLIC</visibility><resourceGroup><name></name></resourceGroup><icon/></orchestratedResource></nestedResources></orchestratedResource></orchestratedResources><abstractResources><abstractResource><id>fec116d3-2850-400a-95d6-9aeecfedf7e8</id><type>DEVICE</type><name>ar1</name><description></description><condition>template[ar]</condition><reservationTime>IMMEDIATE</reservationTime><isPublic>true</isPublic><icon/><nestedResources><abstractResource><id>e1571eaf-3a89-428f-a078-36a01e6b2ea0</id><type>DEVICE</type><name>NestAr</name><description></description><condition>template[T1]</condition><reservationTime>IMMEDIATE</reservationTime><isPublic>true</isPublic><referencedTemplateId>315ce9a8-6c39-4cf9-b969-b3284eabf991</referencedTemplateId><icon/></abstractResource><abstractResource><id>3d251445-8ef6-4930-9972-715ad4786621</id><type>PORT</type><name>NestPort</name><description></description><condition>template[Pord]</condition><reservationTime>IMMEDIATE</reservationTime><isPublic>true</isPublic><referencedTemplateId>75d60876-18fc-4f74-b43c-420dacb9cc89</referencedTemplateId><icon/></abstractResource></nestedResources></abstractResource></abstractResources><topologies><topology><name>cond</name><attachment><id>369e2407-ec37-4659-b254-a3c26cf2d2bb</id><name>cond</name><contentType>application/xml</contentType></attachment></topology></topologies></inventory>
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory format-version="1.0">
+   <templates>
+      <template>
+         <id>75d60876-18fc-4f74-b43c-420dacb9cc89</id>
+         <revisionId>75d60876-18fc-4f74-b43c-420dacb9cc89</revisionId>
+         <name>Pord netw</name>
+         <description />
+         <isTemplate>true</isTemplate>
+         <type>PORT</type>
+         <interfaceType>NONE</interfaceType>
+         <utilizationType>SHARED</utilizationType>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isCustomReservationTime>false</isCustomReservationTime>
+         <icon />
+         <defaultImageAttach />
+         <defaultConfigAttach />
+      </template>
+      <template>
+         <id>315ce9a8-6c39-4cf9-b969-b3284eabf991</id>
+         <revisionId>315ce9a8-6c39-4cf9-b969-b3284eabf991</revisionId>
+         <name>T1</name>
+         <description />
+         <isTemplate>true</isTemplate>
+         <type>DEVICE</type>
+         <interfaceType>NONE</interfaceType>
+         <utilizationType>SHARED</utilizationType>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isCustomReservationTime>false</isCustomReservationTime>
+         <icon />
+         <defaultImageAttach />
+         <defaultConfigAttach />
+         <sessions>
+            <session>
+               <id>7eef721c-0850-4585-81bd-1d15853e0910</id>
+               <sessionId>93440541-93d1-4154-ac07-a139b6fbba85</sessionId>
+               <name>new_session</name>
+               <language>Python</language>
+               <baseProfile>application://com.fnfr.svt.applications.telnet</baseProfile>
+               <baseApplication>com.fnfr.svt.applications.telnet</baseApplication>
+               <isDisabled>false</isDisabled>
+               <resourceId>315ce9a8-6c39-4cf9-b969-b3284eabf991</resourceId>
+               <properties>
+                  <property>
+                     <id>5fd60360-9633-40c7-99de-80cc3f3a736b</id>
+                     <name>ipAddress</name>
+                     <value>10.1.2.1</value>
+                  </property>
+                  <property>
+                     <id>00d63bce-ae68-4fbb-8947-3536b4f71ad4</id>
+                     <name>type</name>
+                     <value>com.fnfr.svt.applications.telnet.documents.TelnetSessionProperties</value>
+                  </property>
+               </properties>
+            </session>
+         </sessions>
+         <nestedTemplates>
+            <nestedTemplate>
+               <id>af47e8c9-47e9-4eab-a249-edad078e56e7</id>
+            </nestedTemplate>
+         </nestedTemplates>
+      </template>
+      <template>
+         <id>af47e8c9-47e9-4eab-a249-edad078e56e7</id>
+         <revisionId>af47e8c9-47e9-4eab-a249-edad078e56e7</revisionId>
+         <name>T2</name>
+         <description />
+         <isTemplate>true</isTemplate>
+         <type>DEVICE</type>
+         <interfaceType>ORCHESTRATION</interfaceType>
+         <utilizationType>SHARED</utilizationType>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isCustomReservationTime>false</isCustomReservationTime>
+         <icon />
+         <defaultImageAttach />
+         <defaultConfigAttach />
+      </template>
+   </templates>
+   <orchestratedResources>
+      <orchestratedResource>
+         <id>1a1a6b99-97e6-4ae6-8e88-8dfb85fe91e9</id>
+         <type>DEVICE</type>
+         <name>S1</name>
+         <description />
+         <condition>template[T1]</condition>
+         <role>S1_VELOCITY_SELECTED</role>
+         <referencedTemplateId>315ce9a8-6c39-4cf9-b969-b3284eabf991</referencedTemplateId>
+         <visibility>PUBLIC</visibility>
+         <resourceGroup>
+            <name />
+         </resourceGroup>
+         <icon />
+         <nestedResources>
+            <orchestratedResource>
+               <id>3037aac3-d928-4ecb-9d55-fb54b105ff3b</id>
+               <type>DEVICE</type>
+               <name>NestS1</name>
+               <description />
+               <condition>template[T2]</condition>
+               <role>S1_VELOCITY_SELECTED</role>
+               <referencedTemplateId>af47e8c9-47e9-4eab-a249-edad078e56e7</referencedTemplateId>
+               <visibility>PUBLIC</visibility>
+               <resourceGroup>
+                  <name />
+               </resourceGroup>
+               <icon />
+            </orchestratedResource>
+            <orchestratedResource>
+               <id>c3ef85bb-1f7e-44fa-b508-6365c10f1ac9</id>
+               <type>PORT</type>
+               <name>OrchPort</name>
+               <description />
+               <condition>template[Pord netw]</condition>
+               <role>S1_VELOCITY_SELECTED</role>
+               <referencedTemplateId>75d60876-18fc-4f74-b43c-420dacb9cc89</referencedTemplateId>
+               <visibility>PUBLIC</visibility>
+               <resourceGroup>
+                  <name />
+               </resourceGroup>
+               <icon />
+            </orchestratedResource>
+         </nestedResources>
+      </orchestratedResource>
+   </orchestratedResources>
+   <abstractResources>
+      <abstractResource>
+         <id>fec116d3-2850-400a-95d6-9aeecfedf7e8</id>
+         <type>DEVICE</type>
+         <name>ar1</name>
+         <description />
+         <condition>template[ar]</condition>
+         <reservationTime>IMMEDIATE</reservationTime>
+         <isPublic>true</isPublic>
+         <icon />
+         <nestedResources>
+            <abstractResource>
+               <id>e1571eaf-3a89-428f-a078-36a01e6b2ea0</id>
+               <type>DEVICE</type>
+               <name>NestAr</name>
+               <description />
+               <condition>template[T1]</condition>
+               <reservationTime>IMMEDIATE</reservationTime>
+               <isPublic>true</isPublic>
+               <referencedTemplateId>315ce9a8-6c39-4cf9-b969-b3284eabf991</referencedTemplateId>
+               <icon />
+            </abstractResource>
+            <abstractResource>
+               <id>3d251445-8ef6-4930-9972-715ad4786621</id>
+               <type>PORT</type>
+               <name>NestPort</name>
+               <description />
+               <condition>template[Pord netw]</condition>
+               <reservationTime>IMMEDIATE</reservationTime>
+               <isPublic>true</isPublic>
+               <referencedTemplateId>75d60876-18fc-4f74-b43c-420dacb9cc89</referencedTemplateId>
+               <icon />
+            </abstractResource>
+         </nestedResources>
+      </abstractResource>
+   </abstractResources>
+   <topologies>
+      <topology>
+         <name>cond</name>
+         <attachment>
+            <id>369e2407-ec37-4659-b254-a3c26cf2d2bb</id>
+            <name>cond</name>
+            <contentType>application/xml</contentType>
+         </attachment>
+      </topology>
+   </topologies>
+</inventory>
