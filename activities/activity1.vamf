@@ -1,14 +1,58 @@
 {
-   "name":"Activity - repo3",
+   "name": "Activity - repo3",
    "shortDescription": "Test Activity on eduard-repo3 in master branch",
-   "icon":"customActivityManual.svg",
-   "descriptionMarkdown":"customActivityManual.md",
+   "icon": "customActivityManual.svg",
+   "descriptionMarkdown": "customActivityManual.md",
    "topology": [
-{
-      "name": "Velocity Cluster",
-      "actionTitle":"Reserve",
-      "description": "Create an immediate reservation on the topology",
-      "reservationDuration":""
-    }]
+      {
+         "name": "Velocity Cluster",
+         "actionTitle": "Reserve",
+         "description": "Create an immediate reservation on the topology",
+         "reservationDuration": "30"
+      },
+      {
+         "name": "Velocity Cluster 2",
+         "actionTitle": "Reserve",
+         "description": "Descriptive text alongside button",
+         "reservationDuration": "60",
+         "startupTasks": [
+            {
+               "name": "Startup1",
+               "testPath": "main/projectname/test_cases/startup.fftc",
+               "parametersList": [
+                  {
+                     "name": "param1",
+                     "description": "Username of the agent to set up",
+                     "value": "param1 value"
+                  }
+               ],
+               "requirements": [
+                  {
+                     "name": "os.type",
+                     "value": "windows"
+                  }
+               ]
+            }
+         ],
+         "teardownTasks": [
+            {
+               "name": "Teardown1",
+               "testPath": "main/projectname/test_cases/teardown.fftc",
+               "parametersList": [
+                  {
+                     "name": "param1",
+                     "description": "Username of the agent to set up",
+                     "value": "param1 value"
+                  }
+               ],
+               "requirements": [
+                  {
+                     "name": "os.type",
+                     "value": "windows"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
-
