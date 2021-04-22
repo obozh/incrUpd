@@ -14,45 +14,7 @@
          "name": "Velocity Cluster 2",
          "actionTitle": "Reserve",
          "description": "Descriptive text alongside button",
-         "reservationDuration": "60",
-         "startupTasks": [
-            {
-               "name": "Startup1",
-               "testPath": "main/projectname/test_cases/startup.fftc",
-               "parametersList": [
-                  {
-                     "name": "param1",
-                     "description": "Username of the agent to set up",
-                     "value": "param1 value"
-                  }
-               ],
-               "requirements": [
-                  {
-                     "name": "os.type",
-                     "value": "windows"
-                  }
-               ]
-            }
-         ],
-         "teardownTasks": [
-            {
-               "name": "Teardown1",
-               "testPath": "main/projectname/test_cases/teardown.fftc",
-               "parametersList": [
-                  {
-                     "name": "param1",
-                     "description": "Username of the agent to set up",
-                     "value": "param1 value"
-                  }
-               ],
-               "requirements": [
-                  {
-                     "name": "os.type",
-                     "value": "windows"
-                  }
-               ]
-            }
-         ]
+         "reservationDuration": "60"
       }
    ]
 }
