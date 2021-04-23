@@ -22,8 +22,9 @@
                "parametersList": [
                   {
                      "name": "param1",
-                     "description": "Username of the agent to set up",
-                     "value": "param1 value"
+                     "value": "param1 value",
+                     "type": "SECRET",
+                     "description": "Username of the agent to set up"
                   }
                ],
                "requirements": [
@@ -41,8 +42,9 @@
                "parametersList": [
                   {
                      "name": "param1",
-                     "description": "Username of the agent to set up",
-                     "value": "param1 value"
+                     "value": "param1 value",
+                     "type": "TYPE1",
+                     "description": "Username of the agent to set up"
                   }
                ],
                "requirements": [
