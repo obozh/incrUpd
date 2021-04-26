@@ -33,6 +33,32 @@
                      "value": "windows"
                   }
                ]
+            },
+            {
+               "name": "Startup2",
+               "testPath": "main/projectname/test_cases/startup2.fftc",
+               "parametersList": [
+                  {
+                     "name": "param21",
+                     "value": "param21 value",
+                     "type": "SECRET"
+                  },
+                  {
+                     "name": "param22",
+                     "value": "param22 value",
+                     "type": "SECRET"
+                  }
+               ],
+               "requirements": [
+                  {
+                     "name": "os.type",
+                     "value": "windows"
+                  },
+                  {
+                     "name": "language",
+                     "value": "itest"
+                  }
+               ]
             }
          ],
          "teardownTasks": [
