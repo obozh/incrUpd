@@ -91,12 +91,11 @@
          "teardownTasks": [
             {
                "name": "Teardown1",
-               "testPath": "main/projectname/test_cases/teardown.fftc",
+               "testPath": "main/velocity_test_contents/hello-world-scripts/hello-world.py",
                "parametersList": [
                   {
                      "name": "param1",
                      "value": "param1 value",
-                     "type": "TYPE1",
                      "description": "Username of the agent to set up"
                   }
                ],
