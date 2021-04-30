@@ -1,5 +1,5 @@
 {
-   "name": "Activity - repo3",
+   "name": "Activity - test startup teardown",
    "shortDescription": "Test Activity on eduard-repo3 in master branch",
    "icon": "customActivityManual.svg",
    "descriptionMarkdown": "customActivityManual.md",
@@ -17,7 +17,7 @@
          "reservationDuration": "60",
          "startupTasks": [
             {
-               "name": "Startup1",
+               "name": "StartupInvalidPathValidParamType",
                "testPath": "main/projectname/test_cases/startup.fftc",
                "parametersList": [
                   {
@@ -35,18 +35,18 @@
                ]
             },
             {
-               "name": "Startup2",
+               "name": "StartupInvalidPathInvalidParamType",
                "testPath": "main/projectname/test_cases/startup2.fftc",
                "parametersList": [
                   {
                      "name": "param21",
                      "value": "param21 value",
-                     "type": "SECRET"
+                     "type": "SECRET1"
                   },
                   {
                      "name": "param22",
                      "value": "param22 value",
-                     "type": "SECRET"
+                     "type": "SECRET2"
                   }
                ],
                "requirements": [
@@ -59,24 +59,38 @@
                      "value": "itest"
                   }
                ]
+            },
+            {
+               "name": "StartupInvalidPathNoParamType",
+               "testPath": "main/projectname/test_cases/startup2.fftc",
+               "parametersList": [
+                  {
+                     "name": "param21",
+                     "value": "param21 value"
+                  }
+               ]
+            },
+            {
+               "name": "StartupValidPathParamInvalidParamType",
+               "testPath": "main/velocity_test_contents/test_cases/rm-7772_post.fftc",
+               "parametersList": [
+                  {
+                     "name": "param21",
+                     "value": "param21 value",
+                     "type": "SECRET1"
+                  }
+               ]
             }
          ],
          "teardownTasks": [
             {
-               "name": "Teardown1",
-               "testPath": "main/projectname/test_cases/teardown.fftc",
+               "name": "TeardownValidPathNoParamType",
+               "testPath": "main/velocity_test_contents/test_cases/rm-7772_delete.fftc",
                "parametersList": [
                   {
                      "name": "param1",
                      "value": "param1 value",
-                     "type": "TYPE1",
                      "description": "Username of the agent to set up"
-                  }
-               ],
-               "requirements": [
-                  {
-                     "name": "os.type",
-                     "value": "windows"
                   }
                ]
             }
@@ -90,7 +104,7 @@
          "intervalToRunEndTestCase": "500",
          "teardownTasks": [
             {
-               "name": "Teardown1",
+               "name": "TeardownValidPathValidParamType",
                "testPath": "main/velocity_test_contents/hello-world-scripts/hello-world.py",
                "parametersList": [
                   {
