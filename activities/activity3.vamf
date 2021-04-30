@@ -95,6 +95,7 @@
                "parametersList": [
                   {
                      "name": "param1",
+                     "type": "TEXT",
                      "value": "param1 value",
                      "description": "Username of the agent to set up"
                   }
