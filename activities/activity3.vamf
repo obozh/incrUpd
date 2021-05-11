@@ -14,6 +14,19 @@
          "name": "Velocity Cluster 2",
          "actionTitle": "Reserve",
          "description": "Descriptive text alongside button",
+         "reservationDuration": "6",
+         "intervalToRunEndTestCase": "300",
+         "teardownTasks": [
+            {
+               "name": "TeardownValidPathValidParamType",
+               "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc"
+            }
+         ]
+      },
+      {
+         "name": "Velocity Cluster 3",
+         "actionTitle": "Reserve",
+         "description": "Descriptive text alongside button",
          "reservationDuration": "60",
          "startupTasks": [
             {
@@ -33,53 +46,6 @@
                      "value": "windows"
                   }
                ]
-            },
-            {
-               "name": "StartupInvalidPathInvalidParamType",
-               "testPath": "main/projectname/test_cases/startup2.fftc",
-               "parametersList": [
-                  {
-                     "name": "param21",
-                     "value": "param21 value",
-                     "type": "SECRET1"
-                  },
-                  {
-                     "name": "param22",
-                     "value": "param22 value",
-                     "type": "SECRET2"
-                  }
-               ],
-               "requirements": [
-                  {
-                     "name": "os.type",
-                     "value": "windows"
-                  },
-                  {
-                     "name": "language",
-                     "value": "itest"
-                  }
-               ]
-            },
-            {
-               "name": "StartupInvalidPathNoParamType",
-               "testPath": "main/projectname/test_cases/startup2.fftc",
-               "parametersList": [
-                  {
-                     "name": "param21",
-                     "value": "param21 value"
-                  }
-               ]
-            },
-            {
-               "name": "StartupValidPathParamInvalidParamType",
-               "testPath": "main/velocity_test_contents/test_cases/rm-7772_post.fftc",
-               "parametersList": [
-                  {
-                     "name": "param21",
-                     "value": "param21 value",
-                     "type": "SECRET1"
-                  }
-               ]
             }
          ],
          "teardownTasks": [
@@ -93,19 +59,6 @@
                      "description": "Username of the agent to set up"
                   }
                ]
-            }
-         ]
-      },
-      {
-         "name": "Velocity Cluster 3",
-         "actionTitle": "Reserve",
-         "description": "Descriptive text alongside button",
-         "reservationDuration": "6",
-         "intervalToRunEndTestCase": "300",
-         "teardownTasks": [
-            {
-               "name": "TeardownValidPathValidParamType",
-               "testPath": "main/velocity_test_contents/hello-world-scripts/hello-world.py"
             }
          ]
       }
