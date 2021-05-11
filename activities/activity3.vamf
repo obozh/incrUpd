@@ -101,7 +101,7 @@
          "actionTitle": "Reserve",
          "description": "Descriptive text alongside button",
          "reservationDuration": "6",
-         "intervalToRunEndTestCase": "5",
+         "intervalToRunEndTestCase": "240",
          "teardownTasks": [
             {
                "name": "TeardownValidPathValidParamType",
