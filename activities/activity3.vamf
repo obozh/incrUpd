@@ -100,8 +100,8 @@
          "name": "Velocity Cluster 3",
          "actionTitle": "Reserve",
          "description": "Descriptive text alongside button",
-         "reservationDuration": "600",
-         "intervalToRunEndTestCase": "500",
+         "reservationDuration": "6",
+         "intervalToRunEndTestCase": "5",
          "teardownTasks": [
             {
                "name": "TeardownValidPathValidParamType",
