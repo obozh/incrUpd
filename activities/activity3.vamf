@@ -105,13 +105,7 @@
          "teardownTasks": [
             {
                "name": "TeardownValidPathValidParamType",
-               "testPath": "main/velocity_test_contents/hello-world-scripts/hello-world.py",
-               "requirements": [
-                  {
-                     "name": "pool",
-                     "value": "driver"
-                  }
-               ]
+               "testPath": "main/velocity_test_contents/hello-world-scripts/hello-world.py"
             }
          ]
       }
