@@ -106,18 +106,10 @@
             {
                "name": "TeardownValidPathValidParamType",
                "testPath": "main/velocity_test_contents/hello-world-scripts/hello-world.py",
-               "parametersList": [
-                  {
-                     "name": "param1",
-                     "type": "TEXT",
-                     "value": "param1 value",
-                     "description": "Username of the agent to set up"
-                  }
-               ],
                "requirements": [
                   {
-                     "name": "os.type",
-                     "value": "windows"
+                     "name": "pool",
+                     "value": "driver"
                   }
                ]
             }
