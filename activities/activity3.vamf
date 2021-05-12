@@ -22,45 +22,6 @@
                "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc"
             }
          ]
-      },
-      {
-         "name": "Velocity Cluster 3",
-         "actionTitle": "Reserve",
-         "description": "Descriptive text alongside button",
-         "reservationDuration": "60",
-         "startupTasks": [
-            {
-               "name": "StartupInvalidPathValidParamType",
-               "testPath": "main/projectname/test_cases/startup.fftc",
-               "parametersList": [
-                  {
-                     "name": "param1",
-                     "value": "param1 value",
-                     "type": "SECRET",
-                     "description": "Username of the agent to set up"
-                  }
-               ],
-               "requirements": [
-                  {
-                     "name": "os.type",
-                     "value": "windows"
-                  }
-               ]
-            }
-         ],
-         "teardownTasks": [
-            {
-               "name": "TeardownValidPathNoParamType",
-               "testPath": "main/velocity_test_contents/test_cases/rm-7772_delete.fftc",
-               "parametersList": [
-                  {
-                     "name": "param1",
-                     "value": "param1 value",
-                     "description": "Username of the agent to set up"
-                  }
-               ]
-            }
-         ]
       }
    ]
 }
