@@ -15,7 +15,6 @@
          "actionTitle": "Reserve",
          "description": "Descriptive text alongside button",
          "reservationDuration": "6",
-         "intervalToRunEndTestCase": "330",
          "teardownTasks": [
             {
                "name": "TeardownValidPathValidParamType",
@@ -27,7 +26,8 @@
          "name": "Velocity Cluster 3",
          "actionTitle": "Reserve",
          "description": "Descriptive text alongside button",
-         "reservationDuration": "60",
+         "intervalToRunEndTestCase": "330",
+         "reservationDuration": "666",
          "startupTasks": [
             {
                "name": "StartupInvalidPathValidParamType",
