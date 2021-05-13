@@ -13,7 +13,15 @@
          "startupTasks": [
             {
                "name": "TeardownValidPathValidParamType",
-               "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc"
+               "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc",
+               "parametersList": [
+                  {
+                     "name": "param1",
+                     "value": "param1 value",
+                     "type": "SECRET",
+                     "description": "Username of the agent to set up"
+                  }
+               ]
             }
          ],
          "teardownTasks": [
