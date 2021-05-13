@@ -18,7 +18,7 @@
                   {
                      "name": "param1",
                      "value": "param1 value",
-                     "type": "SECRET",
+                     "type": "TEXT",
                      "description": "Username of the agent to set up"
                   }
                ]
