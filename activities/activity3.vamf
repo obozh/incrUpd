@@ -13,7 +13,7 @@
          "startupTasks": [
             {
                "name": "TeardownValidPathValidParamType",
-               "testPath": "main/velocity_test_contents/test_cases/parameters.fftc",
+               "testPath": "main/velocity_test_contents/test_cases/parameters.ffpt",
                "parametersList": [
                   {
                      "name": "name",
