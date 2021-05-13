@@ -13,7 +13,7 @@
       {
          "name": "Velocity Cluster 2",
          "actionTitle": "Reserve",
-         "description": "Descriptive text alongside button",
+         "description": "Descriptive text alongside button 777",
          "reservationDuration": "6",
          "intervalToRunEndTestCase": "330",
          "startupTasks": [
