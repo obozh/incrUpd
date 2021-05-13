@@ -39,6 +39,18 @@
          "reservationDuration": "666",
          "startupTasks": [
             {
+               "name": "TeardownValidPathValidParamType",
+               "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc"
+            },
+            {
+               "name": "Teardown #2",
+               "testPath": "main/velocity_test_contents/test_cases/always_fail.fftc"
+            },
+            {
+               "name": "abc",
+               "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc"
+            },
+            {
                "name": "StartupInvalidPathValidParamType",
                "testPath": "main/projectname/test_cases/startup.fftc",
                "parametersList": [
