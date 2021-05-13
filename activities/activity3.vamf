@@ -13,12 +13,12 @@
          "startupTasks": [
             {
                "name": "TeardownValidPathValidParamType",
-               "testPath": "main/velocity_test_contents/test_cases/parameters.ffpt",
+               "testPath": "main/velocity_test_contents/test_cases/sleep_Xss.ffpt",
                "parametersList": [
                   {
-                     "name": "name",
+                     "name": "sleep_seconds",
                      "type": "TEXT",
-                     "value": "param1 value"
+                     "value": "222"
                   }
                ]
             }
