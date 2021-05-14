@@ -4,12 +4,25 @@
    "icon": "customActivityManual.svg",
    "descriptionMarkdown": "customActivityManual.md",
    "topology": [{
-         "name": "Velocity Cluster",
-         "actionTitle": "Reserve",
-         "intervalToRunEndTestCase": "330",
-         "description": "Create an immediate reservation on the topology",
-         "reservationDuration": "10",
-         "startupTasks": [{
+      "name": "Velocity Cluster",
+      "actionTitle": "Reserve",
+      "intervalToRunEndTestCase": "330",
+      "description": "Create an immediate reservation on the topology",
+      "reservationDuration": "10",
+      "startupTasks": [{
+         "name": "TeardownValidPathValidParamType",
+         "testPath": "main/velocity_test_contents/test_cases/sleep_Xs.fftc",
+         "requirements": [{
+               "name": "agent_name",
+               "value": "superagent_1"
+            },
+            {
+               "name": "os.type",
+               "value": "macosx"
+            }
+         ]
+      }],
+      "teardownTasks": [{
             "name": "TeardownValidPathValidParamType",
             "testPath": "main/velocity_test_contents/test_cases/sleep_Xs.fftc",
             "parametersList": [{
@@ -17,6 +30,14 @@
                "type": "TEXT",
                "value": "20"
             }],
+            "requirements": [{
+               "name": "agent_name",
+               "value": "superagent"
+            }]
+         },
+         {
+            "name": "TeardownValidPathValidParamType",
+            "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc",
             "requirements": [{
                   "name": "agent_name",
                   "value": "superagent_1"
@@ -26,29 +47,7 @@
                   "value": "macosx"
                }
             ]
-         }],
-         "teardownTasks": [{
-            "name": "TeardownValidPathValidParamType",
-            "testPath": "main/velocity_test_contents/test_cases/sleep_Xs.fftc",
-            "parametersList": [{
-               "name": "sleep_seconds",
-               "type": "TEXT",
-               "value": "20"
-            }]
-         },
-            {
-               "name": "TeardownValidPathValidParamType",
-               "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc",
-               "requirements": [{
-                  "name": "agent_name",
-                  "value": "superagent"
-               },
-               {
-                  "name": "os.type",
-                  "value": "macosx"
-               }
-            ]
-         }]
-      }
-   ]
+         }
+      ]
+   }]
 }
