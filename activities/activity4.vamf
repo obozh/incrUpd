@@ -18,7 +18,7 @@
                   {
                      "name": "sleep_seconds",
                      "type": "TEXT",
-                     "value": "222"
+                     "value": "22"
                   }
                ],
                      "requirements": [{
