@@ -23,8 +23,11 @@
                ],
                      "requirements": [{
                      "name": "agent_name",
-                     "value": "superagent_2"
-                  }]
+                     "value": "superagent_1"
+                  },
+                  { 
+                     "name": "os.type",
+              	     "value": "linux"
             }],
          "teardownTasks": [
            {
