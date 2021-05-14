@@ -41,7 +41,7 @@
                "testPath": "main/velocity_test_contents/test_cases/HelloWorld.fftc",
                "requirements": [{
                   "name": "agent_name",
-                  "value": "superagent_1"
+                  "value": "superagent"
                },
                {
                   "name": "os.type",
